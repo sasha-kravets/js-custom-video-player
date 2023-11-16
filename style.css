@@ -15,24 +15,18 @@
   --controls-elements-color: #efefef;
   --video-timeline-color: rgba(225, 225, 225, 0.6);
   --main-player-color: #2289ff;
-  /* --------------------------------------------------------------------------------------------------------- */
-
-
-  --top-background: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
-  --text-color-light: #FFFFFF;
-  --form-background-color: #FFFFFF;
-  --button-color: #11103E;
-  --download-btn-background: #FFFFFF;
-  --loading-card-backround: #F2F2F2;
-  --text-color-dark: #11103E;
-  --mobile-btn-background: #FFFFFF;
+  --title-color: #ffffff;
 }
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background: var(--body-mob-background);
-  
+}
+
+.title {
+  display: none;
 }
 
 .player {
@@ -251,6 +245,11 @@ body {
     align-items: center;
     min-height: 100vh;
     background: var(--body-background);
+  }
+  .title {
+    display: block;
+    color: var(--title-color);
+    margin-bottom: 16px;
   }
   .player {
     width: 98%;
